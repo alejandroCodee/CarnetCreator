@@ -33,12 +33,12 @@ def crear_carnet(nombre, identidad, telefono, grupo, numero, numero_serie):
     except FileNotFoundError:
         imagen = Image.new('RGB', (ancho, alto), color=(255, 255, 255))
         draw = ImageDraw.Draw(imagen)
-        draw.text((20, 30), "FONDO NO ENCONTRADO", font=ImageFont.truetype("arialbd.ttf", 18), fill=(255, 0, 0))
+        draw.text((20, 30), "FONDO NO ENCONTRADO", font=ImageFont.truetype("arialbd.TTF", 18), fill=(255, 0, 0))
         return None
 
     draw = ImageDraw.Draw(imagen)
-    font_texto = ImageFont.truetype("arialbd.ttf", 18)
-    font_carnet = ImageFont.truetype("arialbd.ttf", 16)
+    font_texto = ImageFont.truetype("arialbd.TTF", 18)
+    font_carnet = ImageFont.truetype("arialbd.TTF", 16)
     negro = (0, 0, 0)
     azul_marco = (0, 43, 111)
 
